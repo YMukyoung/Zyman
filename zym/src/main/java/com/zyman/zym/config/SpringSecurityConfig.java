@@ -28,6 +28,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter{
 			.defaultSuccessUrl("/home")
 			.and()
 		.logout()
+			.logoutSuccessUrl("/")
 			.permitAll();
 	}
 	
